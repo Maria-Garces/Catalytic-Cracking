@@ -1,18 +1,10 @@
-/*	Programa que simula el proceso de craqueo catal韙ico de la refiner韆 Amuay - Punto Fijo, Venezuela
-
-	Programa realizado por:
-	- Mar韆 Garc閟
-	- Alejandro Rodr韌uez
-	- Gabriel Pacheco
-	- Alan Ruz
-	
-	Fecha:
+/*	Programa que simula el proceso de craqueo catal铆tico de la refiner铆a Amuay - Punto Fijo, Venezuela
 	
 */
 
 #include<iostream> // Mostrar datos en pantalla
 #include<fstream> // leer y escribir en un archivo de texto
-#include<windows.h> // Control de ejecuci髇 (tiempo de refrescamiento de pantalla)
+#include<windows.h> // Control de ejecuci贸n (tiempo de refrescamiento de pantalla)
 using namespace std;
 
 int main()
@@ -26,7 +18,7 @@ int main()
  string pantalla="ON";
  int aux = 0;
  
- // Leemos los datos del archivo de texto prueba a trav閟 de la funci髇
+ // Leemos los datos del archivo de texto prueba a trav茅s de la funci贸n
  // Casabe (Puede ser cualquier nombre)
  
  inicio:
@@ -51,7 +43,7 @@ int main()
 	 		cout <<" - El Switch de temperatura esta en = "<<switch_temp<<endl;
 	 		cout <<" - La temperatura esta a = "<<temperatura<<" grados centigrados"<<endl;
 	 		cout <<" - La perturbacion es de = "<<perturbacion<<" grados centigrados"<<endl;
-	 		cout <<" - El Switch de Presi髇 Diferencial esta en = "<<switch_pres_dif<<endl;  
+	 		cout <<" - El Switch de Presi贸n Diferencial esta en = "<<switch_pres_dif<<endl;  
 	    	cout <<" - La valvula manual esta = "<<valvula<<endl;
 	 		pantalla ="OFF"; 
    		}	
@@ -76,7 +68,7 @@ int main()
 		pantalla = "ON";
 	}
 	
-// Simulamos el funcionamiento del Transmisor de Presi髇 de la Bomba de Crudo
+// Simulamos el funcionamiento del Transmisor de Presi贸n de la Bomba de Crudo
 	if(bomba_cru == "ENCENDIDA")
 	{
 		if(presion_cru < 70)
@@ -158,7 +150,7 @@ int main()
 		pantalla = "ON";
 	}
 	
-// Simulamos el funcionamiento del Transmisor de Presi髇 de la Bomba de Catalizador
+// Simulamos el funcionamiento del Transmisor de Presi贸n de la Bomba de Catalizador
 	if(bomba_cat == "ENCENDIDA" and valvula == "ABIERTA")
 	{
 		if(presion_cat < 55)
